@@ -71,10 +71,11 @@ while True:
 		thickness = int(np.sqrt(args["buffer"]/ float(i+1)) * 2.5)
 		cv2.line(frame, pts[i-1], pts[i], (0, 255, 255), thickness)
 		
-        # show frame
-        cv2.imshow("Frame", frame)
-        key = cv2.waitKey(1) & 0xFF
+	# show frame
+	cv2.imshow("Frame", frame)
+	key = cv2.waitKey(1) & 0xFF
         
+	
 	# q-val megszakit
 	if key == ord("q"):
             break
